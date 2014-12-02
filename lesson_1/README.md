@@ -48,7 +48,7 @@ There are two ways to include JavaScript in an HTML page. You can use the `scrip
 ```
 
 
-It is generally a good idea to keep things as separate as possible, so to keep from having a bunch of JavaScript inside of your HTML, it is generally best to include from an external file.
+It is generally a good idea to keep things as separate as possible, so to keep from having a bunch of JavaScript inside of your HTML, it is best to include from an external file.
 
 It is important that the `src` *attribute* of that `script` tag be relative to the position of the `index.html` file. So, for example, if the `application.js` file was in the same directory as `index.html`, and not in a separate scripts directory, it would look like this instead:
 ```
@@ -78,3 +78,6 @@ Your `application.js` file should look only like this for now:
 ```
 document.write("Hello World!");
 ```
+
+
+You should now have everything in the correct place. If you open `index.html` in your browser, you should see "Hello World!" printed to the screen. Congratulations, you've just written your first JavaScript application from scratch!
