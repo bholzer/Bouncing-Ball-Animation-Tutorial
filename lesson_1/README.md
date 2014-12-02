@@ -1,6 +1,6 @@
 #Creating the correct project structure and wiring everything up
 
-**At any point in the lesson, you can navigate to the `src` directory to see what you should have at the end of this lesson**
+**At any point in the lesson, you can navigate to the [`src`](https://github.com/bholzer/Bouncing-Ball-Animation-Tutorial/tree/master/lesson_1/src/ball_animation) directory to see what you should have at the end of this lesson**
 
 When you write a JavaScript application, you should follow a project directory structure that makes keeping track of things easy. I stick to a simple, easy to follow structure. Our project will look like this:
 
