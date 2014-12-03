@@ -24,7 +24,7 @@ For an animation to be interesting, these values have to change over the duratio
 ---
 The general idea is to have one function called for every frame. This function will complete the 3 steps listed above. We will use a function called `render`.
 
-Modern browsers have a built-in function that handles putting sequencing new frames. This function is called `requestAnimationFrame`. This function takes as an argument your function that is to be executed when you want to render a new frame. So we will pass our `render` function to `requestAnimationFrame` to draw each frame. This concept of using a function as an argument can be kind of tricky, so I've gone into more detail [here](https://github.com/bholzer/Bouncing-Ball-Animation-Tutorial/tree/master/lesson_3/first_class.md).
+Modern browsers have a built-in function that handles sequencing new frames. This function is called `requestAnimationFrame`. This function takes as an argument your function that is to be executed when you want to render a new frame. So we will pass our `render` function to `requestAnimationFrame` to draw each frame. This concept of using a function as an argument can be kind of tricky, so I've gone into more detail [here](https://github.com/bholzer/Bouncing-Ball-Animation-Tutorial/tree/master/lesson_3/first_class.md).
 
 So for step 1 (clearing existing shapes), we will use a method of `context` called `clearRect`. This method clears the canvas using a specified rectangle. The four parameters to the method are:
 
