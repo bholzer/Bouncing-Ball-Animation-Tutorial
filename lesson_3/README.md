@@ -164,6 +164,8 @@ window.onload = function() {
 }
 ```
 
+Once you have everything working, mess around with the code a bit. Remove some of the steps and see what happens, and make a point of understanding why removing a step changes the way the program acts. 
+
 
 
 
