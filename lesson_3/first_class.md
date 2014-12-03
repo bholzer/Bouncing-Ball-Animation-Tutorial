@@ -18,9 +18,8 @@ compute(5, 10, add);
 
 // This function simply acts as a middle-man 
 function compute(num1, num2, callback) {
-  // the "callback" variable here is a reference to the function "add"
-  // so this function returns the return value of the "callback" function
-  // consider this equivalent to "return add(num1, num2)"
+  // The "callback" variable here is a reference to the function "add"
+  // So consider this equivalent to "return add(num1, num2)"
   return callback(num1, num2);
 };
 
