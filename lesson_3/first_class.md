@@ -27,3 +27,4 @@ function add(num1, callback) {
   return num1 + callback(num1);
 };
 ```
+`add(5, timesTwo);` will return 15
