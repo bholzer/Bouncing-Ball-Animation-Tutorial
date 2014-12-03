@@ -90,6 +90,7 @@ window.onload = function() {
     window.requestAnimationFrame(render);
   };
 
+  //Finally, call our render function to start the animation
   render();
 }
 ```
