@@ -2,7 +2,7 @@
 ---
 This is a weird concept, but it will change the way you think about JavaScript. It's a very important concept to try and grasp.
 
-So functions can be called with arguments like you would expect. Think about a function that takes two arguments and returns their sum:
+Functions can be called with arguments like you would expect: with numbers, strings, booleans, etc. Think about a function that takes two arguments and returns their sum:
 ```javascript
 function add(num1, num2) {
   return num1 + num2;
@@ -13,18 +13,19 @@ Now for the weird part: functions are just like any other object and can be pass
 
 A function is known as a *callback* if it is passed to another function and called from within that function. Here is an example:
 ```javascript
-// Here, the function timesTwo is being passed to the function add
-add(5, timesTwo);
+// Here, the function "add" is being passed as an argument to the function "compute"
+compute(5, 10, add);
 
-function timesTwo(n) {
-  return n * 2;
+// This function simply acts as a middle-man 
+function compute(num1, num2, callback) {
+  // the "callback" variable here is a reference to the function "add"
+  // so this function returns the return value of the "callback" function
+  // consider this equivalent to "return add(num1, num2)"
+  return callback(num1, num2);
 };
 
-function add(num1, callback) {
-  // Since callback is actually the function timesTwo right here,
-  // this is equivalent to:
-  // return num1 + timesTwo(num1);
-  return num1 + callback(num1);
+function add(num1, num2) {
+  return num1 + num2;
 };
 ```
-`add(5, timesTwo);` will return 15
+`compute(5, 10, add)` will return 15
