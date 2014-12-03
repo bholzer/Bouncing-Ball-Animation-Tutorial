@@ -25,7 +25,7 @@ To bring this together to clear the entire canvas:
 ```javascript
 function render() {
   // Clear from the top-left of the canvas to the bottom-right
-  // Step 1 from above
+  // Step 1: Clear existing shapes
   context.clearRect(0, 0, canvas.width, canvas.height);
 };
 ```
@@ -37,6 +37,7 @@ Step 2 is to draw the shapes in their current states. Animations often work be r
  You will need to create an initial ball state for the animation to begin with, this is exactly the kind of thing a JavaScript object is used for:
 
 ```javascript
+// The ball object that will keep track of the ball's state
 var ball = {
   x: 0,
   y: 0,
@@ -62,6 +63,7 @@ Note here that the ball object is defined outside of the `render` function. This
 ---
 Step 3 is to transform the data of the object that is being animated. A ball in this case. If we want to make the ball move diagonally across the screen, we simply increase its x and y values by the same amount every time a new frame is rendered. 
 ```javascript
+// The ball object that will keep track of the ball's state
 var ball = {
   x: 0,
   y: 0,
@@ -90,6 +92,7 @@ Now, you simply have to repeat the same process over and over again.
 
 Modern browsers have a built-in function that handles sequencing new frames. This function is called `requestAnimationFrame`. This function takes as an argument your function that is to be executed when you want to render a new frame. So we will pass our `render` function to `requestAnimationFrame` to draw each frame. This concept of using a function as an argument can be kind of tricky, so I've gone into more detail [here](https://github.com/bholzer/Bouncing-Ball-Animation-Tutorial/tree/master/lesson_3/first_class.md).
 ```javascript
+// The ball object that will keep track of the ball's state
 var ball = {
   x: 0,
   y: 0,
@@ -131,6 +134,7 @@ window.onload = function() {
   context.canvas.width = window.innerWidth;
   context.canvas.height = window.innerHeight;
 
+  // The ball object that will keep track of the ball's state
   var ball = {
     x: 0,
     y: 0,
