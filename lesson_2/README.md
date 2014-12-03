@@ -22,7 +22,7 @@ You'll notice the `id` attribute on the `canvas` element. This is not necessary,
 ####Making your first drawing using JavaScript
 
 In your `application.js` file, you will now start drawing to the canvas! There are going to be a couple things here that you may not understand at first, but I will try to explain them. Your file should look like this (with comments added to explain what is happening):
-```
+```javascript
 window.onload = function() {
   // This is why we added the id attribute to the canvas HTML element, because we can now grab it using this simple, built-in function.
   // Create a variable that contains the canvas element.
