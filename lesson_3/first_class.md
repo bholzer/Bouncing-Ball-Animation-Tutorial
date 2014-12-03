@@ -13,6 +13,9 @@ Now for the weird part: functions are just like any other object and can be pass
 
 A function is known as a *callback* if it is passed to another function and called from within that function. Here is an example:
 ```javascript
+// Here, the function timesTwo is being passed to the function add
+add(5, timesTwo);
+
 function timesTwo(n) {
   return n * 2;
 };
@@ -23,7 +26,4 @@ function add(num1, callback) {
   // return num1 + timesTwo(num1);
   return num1 + callback(num1);
 };
-
-// Here, the function timesTwo is being passed to the function add
-add(5, timesTwo);
 ```
