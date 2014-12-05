@@ -4,7 +4,7 @@ You're ball should now be bouncing around the canvas.
 
 Now we want to make this program cleaner and more structured. This is where object-oriented programming (OOP) comes into play. OOP is a very widespread paradigm, so get comfortable with it.
 
-The general idea behind OOP is to model your program after real-life things. Let's use a car as an example. A car has both *attributes* and *actions* actions it can perform.
+The general idea behind OOP is to model your program after real-life things. Let's use a car as an example. A car has both *attributes* and *actions* it can perform.
 
 Attributes of a car might be:
 - Color
