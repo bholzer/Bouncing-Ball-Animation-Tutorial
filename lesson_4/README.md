@@ -1,6 +1,6 @@
 #Object-Oriented JavaScript
 
-You're ball should now be bouncing around the canvas. [This](https://github.com/bholzer/Bouncing-Ball-Animation-Tutorial/tree/master/lesson_4/bouncing.js) is what your javascript file should look like.
+You're ball should now be bouncing around the canvas.
 
 Now we want to make this program cleaner and more structured. This is where object-oriented programming (OOP) comes into play. OOP is a very widespread paradigm, so get comfortable with it.
 
