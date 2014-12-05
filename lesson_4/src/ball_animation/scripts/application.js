@@ -4,7 +4,7 @@ var Ball = function(x, y, radius, xVelocity, yVelocity) {
   this.radius = radius;
   this.xVelocity = xVelocity;
   this.yVelocity = yVelocity;
-  this.stepForward = function() {
+  this.stepForward = function(context) {
    if (this.x - this.radius < 0 || this.x + this.radius > context.canvas.width) {
      this.xVelocity = -this.xVelocity;
    }
@@ -34,7 +34,7 @@ window.onload = function() {
     context.arc(ball.x, ball.y, ball.radius, 0, Math.PI*2);
     context.closePath();
     context.fill();
-    ball.stepForward();
+    ball.stepForward(context);
 
     window.requestAnimationFrame(render);
   };
