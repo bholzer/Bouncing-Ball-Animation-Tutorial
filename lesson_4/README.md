@@ -23,7 +23,7 @@ Actions a car might perform:
 
 This is the kind of the OOP handles very well.
 
-In our example, we could make a *class* to represent the car. A class is a collection of attributes and actions that describe the model. We also refer to these actions as *methods*. A class can be thought of as a template for an object.
+In our example, we could make a *class* to represent the car. A class is a collection of attributes and actions that describe the model. The actions that the class can perform are called *methods*. A class can be thought of as a template for an object.
 
 Let's make a car class:
 ```javascript
