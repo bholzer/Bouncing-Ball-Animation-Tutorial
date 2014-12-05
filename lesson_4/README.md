@@ -50,7 +50,7 @@ var otherCar = new Car();
 
 This creates two *instances* of the Car class. Each instance has a `color` and `topSpeed` attribute, as well as a `startCar` method.
 
-The `new` is something you probably haven't seen before. What it essentially means is "give me a new instance of the class I want." `myCar` and `otherCar` are two different objects and can be modified independently, but they were build using the same template, or class.
+The `new` is something you probably haven't seen before. What it essentially means is "give me a new instance of the class I want." `myCar` and `otherCar` are two different objects and can be modified independently, but they were built using the same template, or class.
 
 To make the class more useful, you can modify your constructor so that you may create different instances with different attributes. Say that you wanted to make the car a different color than blue when you create it. You could define your constructor to take an argument like this:
 ```javascript
