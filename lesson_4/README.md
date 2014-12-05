@@ -246,5 +246,4 @@ function render() {
 Now look at how much cleaner the render function is. And look at the ball class and see how it is maintaining its own data, as opposed to it all being modified directly from the `render` function. Next, I want you to move the code from `render` that draws the ball into the ball class. Done correctly, the `render` function could contain as few as three lines.
 
 
-
-
+I know this is a bit of a tough concept, but once you get the hang of it, you'll feel so much more comfortable. MDN does a great job of doing a tutorial [HERE](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript) as well if you want to look over theirs.
