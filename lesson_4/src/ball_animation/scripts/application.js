@@ -25,7 +25,7 @@ window.onload = function() {
 
 
   // Now we create an instance of the class
-  var ball = new Ball(100, 100, 30, 5, 5);
+  var ball = new Ball(100, 150, 30, 5, 5);
 
 
   function render() {
